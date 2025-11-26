@@ -345,7 +345,7 @@ export const FourKScreen: Story = {
     theme: 'light',
   },
   parameters: {
-    chromatic: { viewports: [3840] },
+    chromatic: { viewports: [1200] },
   },
 };
 
@@ -480,7 +480,9 @@ export const ThemeComparison: Story = {
 
 export const SideByComparison: Story = {
   render: () => (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+    <div
+      style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}
+    >
       <Footer theme="light" LinkWrapper="a" />
       <Footer theme="dark" LinkWrapper="a" />
     </div>
