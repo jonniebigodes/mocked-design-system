@@ -6,7 +6,6 @@ argument-hint: [message]
 Generate Storybook stories for a React component named $ARGUMENTS located in the @src/ directory with the following specifications:
 
 - If the component file does not exist, respond with "Component $ARGUMENTS does not exist"
-- If the file $ARGUMENTS.stories.tsx already exists, do not overwrite it and respond with "Stories for component $ARGUMENTS already exist"
-- Create a file named $ARGUMENTS.stories.tsx in the same directory
-- Include at least 5 different stories showcasing various states or props of the component
-- Repeat the above steps to create a total of 20 unique stories for the component, ensuring each story demonstrates a different aspect or variation of the component's functionality or appearance.
+- If the file $ARGUMENTS.stories.tsx already exists, lookup the ammount of stories inside, and exit if there are already 20 or more stories.
+- If the file $ARGUMENTS.stories.tsx already exists, lookup the ammount of stories inside, and if there are less than 20 stories, append new stories until there are 20 stories total. If there are already 20 or more stories.
+- Ensure each story demonstrates a different aspect or variation of the component's functionality or appearance.
