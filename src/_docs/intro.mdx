@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# Mocked Design System
+
+<img src="cover.jpg" />
+
+This is a mocked design system package used for testing multiple instances of Storybook in a monorepo setup. It provides basic UI components and styles to simulate a real design system without the complexity of a full implementation.
+
+## Install
+
+```console
+pnpm add @chromatic-com/tetra
+```
+
+## To Do
+
+- [ ] Replace fonts in Text by the new text helpers
+- [ ] Move icons to a new library and import it as primitive inside the Icon component
+
+## Developing
+
+Watch and rebuild code with `tsup` and runs Storybook to preview your UI during development.
+
+```console
+pnpm run storybook
+```
+
+## Building
+
+Build package with `tsup` for production.
+
+```console
+pnpm run build
+```

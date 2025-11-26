@@ -1,0 +1,62 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { fontSize, fontWeight, lineHeight, fontFamily } from './tokens';
+import { InfoBox } from '../_localComponents/InfoBox';
+import { List } from '../_localComponents/List';
+import { Stack } from '../Stack';
+
+<Meta title="Tokens/Typography" />
+
+# Typography
+
+Like in other ui in mondays interface, typography works by principle of accessibility before aesthetics. Therefore the text should be readable and help the user understand what's important by well contrasted size and colors hierarchy.
+
+<InfoBox backgroundColor="pink100">
+  These typography tokens are not meant to be used on their own. At all cost you
+  should avoid to use them directly in your code. Instead, use the typography
+  components provided by the UI kit.
+</InfoBox>
+
+<Stack marginTop={12} />
+
+### Font Size
+
+<Typeset
+  fontSizes={[11, 12, 14, 16, 18, 20, 24, 30, 36, 40, 48, 56, 60]}
+  fontWeight={fontWeight.regular}
+  fontFamily={fontFamily.sans}
+/>
+
+<Stack marginTop={12} />
+
+### Font Family
+
+<List
+  list={Object.entries(fontFamily).map(([key, value]) => ({
+    name: key,
+    value: value,
+  }))}
+/>
+
+<Stack marginTop={12} />
+
+### Font Weight
+
+<List
+  list={Object.entries(fontWeight).map(([key, value]) => ({
+    name: key,
+    value: value,
+  }))}
+/>
+
+<Stack marginTop={12} />
+
+### Line Height
+
+<List
+  list={Object.entries(lineHeight).map(([key, value]) => ({
+    name: key,
+    value: value,
+  }))}
+/>
+
+<Stack marginTop={12} />
