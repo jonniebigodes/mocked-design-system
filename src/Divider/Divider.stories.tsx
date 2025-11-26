@@ -143,9 +143,9 @@ export const WithMaxWidth: Story = {
   render(args) {
     return (
       <Stack direction="column" align="center">
-        <Placeholder height={300} width={1024} color="blackTr10" />
+        <Placeholder height={300} width={800} color="blackTr10" />
         <Divider {...args} />
-        <Placeholder height={300} width={1024} color="yellow600" />
+        <Placeholder height={300} width={800} color="yellow600" />
       </Stack>
     );
   },
@@ -159,9 +159,9 @@ export const WithFullWidth: Story = {
   render: (args) => {
     return (
       <Stack direction="column" marginY={10} marginX={10} gap={10}>
-        <Placeholder height={300} width={1600} color="yellow400" />
+        <Placeholder height={300} width={800} color="yellow400" />
         <Divider {...args} />
-        <Placeholder height={300} width={1600} color="blue100" />
+        <Placeholder height={300} width={800} color="blue100" />
       </Stack>
     );
   },
