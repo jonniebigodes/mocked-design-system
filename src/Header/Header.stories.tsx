@@ -309,3 +309,343 @@ export const MobileFullWidth: Story = {
     await userEvent.click(MenuButton);
   },
 };
+
+export const DesktopLightLoggedInSticky: Story = {
+  args: {
+    ...DesktopLight.args,
+    loggedIn: true,
+    isSticky: true,
+  },
+  parameters: {
+    ...DesktopLight.parameters,
+  },
+};
+
+export const DesktopDarkLoggedInSticky: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    loggedIn: true,
+    isSticky: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+  },
+  parameters: {
+    ...DesktopLight.parameters,
+  },
+};
+
+export const TabletLightLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    loggedIn: true,
+  },
+  globals: {
+    viewport: { value: 'md' },
+  },
+  parameters: {
+    chromatic: { viewports: [768, 939] },
+  },
+};
+
+export const TabletDarkLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    loggedIn: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'md' },
+  },
+  parameters: {
+    chromatic: { viewports: [768, 939] },
+  },
+};
+
+export const MobileLight: Story = {
+  args: {
+    ...DesktopLight.args,
+  },
+  globals: {
+    viewport: { value: 'xs' },
+  },
+  parameters: {
+    chromatic: { viewports: [320, 375, 414] },
+  },
+};
+
+export const MobileDark: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'xs' },
+  },
+  parameters: {
+    chromatic: { viewports: [320, 375, 414] },
+  },
+};
+
+export const MobileLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    loggedIn: true,
+  },
+  globals: {
+    viewport: { value: 'xs' },
+  },
+};
+
+export const MobileDarkLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    loggedIn: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'xs' },
+  },
+};
+
+export const MobileLoggedOut: Story = {
+  args: {
+    ...DesktopLight.args,
+    loggedIn: false,
+  },
+  globals: {
+    viewport: { value: 'xs' },
+  },
+};
+
+export const TabletLoggedOut: Story = {
+  args: {
+    ...DesktopLight.args,
+    loggedIn: false,
+  },
+  globals: {
+    viewport: { value: 'md' },
+  },
+};
+
+export const DesktopFullWidthDark: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    fullWidth: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+  },
+};
+
+export const DesktopFullWidthLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    fullWidth: true,
+    loggedIn: true,
+  },
+};
+
+export const TabletFullWidth: Story = {
+  args: {
+    ...DesktopLight.args,
+    fullWidth: true,
+  },
+  globals: {
+    viewport: { value: 'md' },
+  },
+};
+
+export const TabletDarkMaintenance: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    maintenanceMode: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'md' },
+  },
+};
+
+export const MobileMaintenance: Story = {
+  args: {
+    ...DesktopLight.args,
+    maintenanceMode: true,
+  },
+  globals: {
+    viewport: { value: 'xs' },
+  },
+};
+
+export const MobileDarkMaintenance: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    maintenanceMode: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'xs' },
+  },
+};
+
+export const DesktopActiveFeatures: Story = {
+  args: {
+    ...DesktopLight.args,
+    desktopActiveId: 'features',
+  },
+  parameters: {
+    ...DesktopLight.parameters,
+  },
+};
+
+export const DesktopDarkActiveDocs: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    desktopActiveId: 'docs',
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+  },
+  parameters: {
+    ...DesktopLight.parameters,
+  },
+};
+
+export const DesktopActiveAddons: Story = {
+  args: {
+    ...DesktopLight.args,
+    desktopActiveId: 'addons',
+  },
+  parameters: {
+    ...DesktopLight.parameters,
+  },
+};
+
+export const DesktopDarkFullWidthSticky: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    fullWidth: true,
+    isSticky: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+  },
+};
+
+export const TabletStickyLight: Story = {
+  args: {
+    ...DesktopLight.args,
+    isSticky: true,
+  },
+  globals: {
+    viewport: { value: 'md' },
+  },
+};
+
+export const TabletStickyDark: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    isSticky: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'md' },
+  },
+};
+
+export const MobileSticky: Story = {
+  args: {
+    ...DesktopLight.args,
+    isSticky: true,
+  },
+  globals: {
+    viewport: { value: 'xs' },
+  },
+};
+
+export const MobileDarkSticky: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    isSticky: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'xs' },
+  },
+};
+
+export const DesktopDarkMaintenanceLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    loggedIn: true,
+    maintenanceMode: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+  },
+};
+
+export const TabletMaintenanceLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    loggedIn: true,
+    maintenanceMode: true,
+  },
+  globals: {
+    viewport: { value: 'md' },
+  },
+};
+
+export const MobileMaintenanceLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    loggedIn: true,
+    maintenanceMode: true,
+  },
+  globals: {
+    viewport: { value: 'xs' },
+  },
+};
+
+export const DesktopLightFullWidthActive: Story = {
+  args: {
+    ...DesktopLight.args,
+    fullWidth: true,
+    desktopActiveId: 'pricing',
+  },
+};
+
+export const TabletDarkOpenLoggedIn: Story = {
+  args: {
+    ...DesktopLight.args,
+    theme: 'dark',
+    loggedIn: true,
+  },
+  globals: {
+    backgrounds: { value: 'dark' },
+    viewport: { value: 'md' },
+  },
+  parameters: {
+    chromatic: { viewports: [768, 939] },
+  },
+  decorators: [(storyFn) => <div style={{ height: '900px' }}>{storyFn()}</div>],
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const MenuButton = await canvas.findByRole('button', {
+      name: 'Toggle Menu',
+    });
+    await userEvent.click(MenuButton);
+  },
+};
